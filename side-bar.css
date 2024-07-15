@@ -1,0 +1,152 @@
+/* left side bar */
+aside {
+  display: flex;
+  flex-direction: column;
+  border-right: solid rgb(50, 50, 50) 1px;
+  width: 275px;
+  padding-top: 10px;
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: #000;
+  overflow: scroll;
+  transition: 1s;
+}
+
+aside::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+aside::-webkit-scrollbar-thumb {
+  width: 100%;
+  background: transparent;
+  cursor: pointer;
+}
+aside:hover::-webkit-scrollbar-thumb {
+  background: rgb(117, 117, 117);
+}
+/* first section of the left side-bar */
+.item1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid rgb(50, 50, 50) 1px;
+  padding-bottom: 10px;
+}
+.item1 img {
+  width: 22px;
+}
+/* css for all left side-bar content1 */
+.content,
+.content2 {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  font-size: 13px;
+  width: 190px;
+  color: rgb(171, 169, 169);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.direct-t {
+  background-color: rgb(43, 55, 60);
+}
+.content:hover,
+.content2:hover {
+  background-color: rgba(105, 132, 141, 0.2);
+  color: white;
+}
+/* 2nd section of the left side-bar */
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid rgb(50, 50, 50) 1px;
+}
+.plus-icon-l-s-b {
+  width: 28px;
+}
+.summary {
+  display: flex;
+  align-items: center;
+  column-gap: 70px;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+  color: rgb(124, 160, 169);
+  cursor: pointer;
+  text-wrap: nowrap;
+}
+.summary img {
+  width: 20px;
+}
+.summary:hover {
+  background-color: rgba(68, 83, 89, 0.2);
+}
+.community-img {
+  width: 35px;
+  border-radius: 20px;
+}
+.star-icon {
+  width: 20px;
+}
+#main-content {
+  display: grid;
+  grid-template-columns: 1fr 3fr 0fr;
+}
+/* css for all left side-bar content2 */
+.content2 {
+  display: flex;
+  align-items: center;
+  font-weight: 12px;
+  color: white;
+}
+.content2 img {
+  width: 20px;
+}
+.margin {
+  height: 100vh;
+  margin-bottom: 50px;
+}
+.r-btn {
+  border: solid white 1px;
+  background-color: transparent;
+  border-radius: 20px;
+  padding-top: 4px;
+  padding-bottom: 3px;
+}
+.r-btn img {
+  width: 10px;
+}
+
+.reddit-rights {
+  margin-top: 30px;
+  color: grey;
+  font-size: 10px;
+  cursor: pointer;
+}
+.reddit-rights:hover {
+  text-decoration: underline;
+}
+
+/* right side bar */
+section {
+  background-color: #000;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  width: 300px;
+  height: 100vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow-y: hidden;
+  transition: 1s;
+}

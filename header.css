@@ -1,0 +1,199 @@
+header {
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border-bottom: solid 1px rgb(50, 50, 50);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* right section */
+.left-section {
+  display: flex;
+  align-items: center;
+  column-gap: 9px;
+  cursor: pointer;
+  padding-right: 10px;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  column-gap: 10px;
+}
+
+.tooltip-diff {
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  text-wrap: nowrap;
+  background-color: rgb(138, 137, 187);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 3px;
+  bottom: -35px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 10000000000000000; /* lol this is fun */
+}
+.logo:hover .tooltip-diff {
+  opacity: 1;
+}
+
+.reddit-icon {
+  width: 37px;
+  border-radius: 20px;
+}
+.reddit-logo {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.search-bar {
+  display: flex;
+  height: 19px;
+  padding: 10px;
+  background-color: rgb(43, 55, 60);
+  border-radius: 30px;
+  flex: 1;
+  max-width: 560px;
+  min-width: 100px;
+}
+.search-bar:hover,
+.search-bar:hover input {
+  background-color: rgb(54, 68, 74);
+}
+.middle-section img {
+  width: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.middle-section input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+}
+.middle-section input::placeholder {
+  color: rgb(124, 160, 169);
+}
+
+/* left section */
+.right-section {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+  margin-left: 10px;
+}
+.right-section button {
+  border: none;
+  background-color: transparent;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+}
+/* got lazy so here's the style for all tooltips :) */
+
+.right-section button:hover .tooltip {
+  opacity: 1;
+}
+.create:hover .tooltip {
+  opacity: 1;
+}
+.right-section button img {
+  width: 23px;
+}
+.right-section button:hover {
+  background-color: rgb(56, 52, 82);
+}
+.create {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+.create:hover {
+  background-color: rgb(56, 52, 82);
+}
+.create .tooltip {
+  left: 0;
+}
+
+.plus-icon {
+  width: 28px;
+}
+.notification {
+  position: relative;
+}
+.notification-count {
+  position: absolute;
+  top: -3px;
+  right: 2px;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.avatar-img {
+  width: 34px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.avatar {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  border-radius: 30px;
+}
+.avatar:hover {
+  background-color: rgb(56, 52, 82);
+}
+.profile {
+  position: absolute;
+  bottom: 8px;
+  right: 3px;
+  background-color: rgb(0, 173, 0);
+  width: 7px;
+  height: 8px;
+  border-radius: 10px;
+}
+.avatar .tooltip {
+  left: -77px;
+}
+.avatar:hover .tooltip {
+  opacity: 1;
+}
+.right-section::-webkit-scrollbar {
+  height: 5px;
+  background: transparent;
+}
+.right-section:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(117, 117, 117);
+}

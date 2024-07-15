@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="side-bar.css" />
+    <title>reddit</title>
+    <link
+      rel="website icon"
+      type="jpg"
+      href="reddit-img/X3dq7BwWSNeUHhYVAwg9EWZnzdW0rDaEwG8X76Th8PI.jpg"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="left-section">
+        <img
+          src="reddit-img/menu-icon.png"
+          class="menu-icon"
+          onclick="sideBarMenu();"
+        />
+        <div class="logo">
+          <img
+            src="reddit-img/X3dq7BwWSNeUHhYVAwg9EWZnzdW0rDaEwG8X76Th8PI.jpg"
+            class="reddit-icon"
+          />
+          <div class="reddit-logo" style="transition: 1s">reddit</div>
+          <p class="tooltip-diff">Go to Reddit Home</p>
+        </div>
+      </div>
+
+      <div class="search-bar middle-section">
+        <img src="reddit-img/search-icon.png" />
+        <input type="text" placeholder="Search Reddit" />
+      </div>
+
+      <div class="right-section">
+        <button>
+          <img src="reddit-img/advertise-icon.png" />
+          <div class="tooltip">Advertise on Reddit</div>
+        </button>
+        <button>
+          <img src="reddit-img/chat-icon.png" />
+          <div class="tooltip">Open Chat</div>
+        </button>
+
+        <div class="create">
+          <img class="plus-icon" src="reddit-img/plus-icon.png" />
+          <div>Create</div>
+          <div class="tooltip">Create Post</div>
+        </div>
+        <button class="notification">
+          <img src="reddit-img/notification-icon.png" />
+          <div class="notification-count">1</div>
+          <div class="tooltip">Open Inbox</div>
+        </button>
+        <div class="avatar">
+          <img class="avatar-img" src="reddit-img/avatar_default_0.png" />
+          <div class="profile"></div>
+          <div class="tooltip">Open Profile Menu</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex">
+      <aside class="left-side-bar" id="leftMenu">
+        <!--page navigation section-->
+        <div class="item1">
+          <div class="content" id="btn1" onclick="fafaClick('home');">
+            <img src="reddit-img/home-icon.png" />
+            <div class="items-name">Home</div>
+          </div>
+          <div class="content" id="btn2" onclick="fafaClick('Popular');">
+            <img src="reddit-img/arrow-icon.png" />
+            <div class="items-name">Popular</div>
+          </div>
+          <div class="content" id="btn3" onclick="fafaClick('all');">
+            <img src="reddit-img/statistics-icon.png" />
+            <div class="items-name">All</div>
+          </div>
+        </div>
+
+        <!--custom feeds-->
+        <div class="items">
+          <div class="summary">
+            <div>CUSTOM FEEDS</div>
+            <img src="reddit-img/arrow-up-icon.png" />
+          </div>
+          <div class="content">
+            <img src="reddit-img/plus-icon.png" class="plus-icon-l-s-b" />
+            <div>Create a custom feed</div>
+          </div>
+        </div>
+
+        <!--COMMUNITIES-->
+        <div class="items">
+          <div class="summary">
+            <div>COMMUNITIES</div>
+            <img src="reddit-img/arrow-up-icon.png" />
+          </div>
+
+          <div class="content">
+            <img src="reddit-img/plus-icon.png" class="plus-icon-l-s-b" />
+            <div>Create a community</div>
+          </div>
+
+          <div class="content" id="main-content">
+            <img src="reddit-img/community-Icon1.png" class="community-img" />
+            <div>r/announcements</div>
+            <img src="reddit-img/star-icon.png" class="star-icon" />
+          </div>
+
+          <div class="content" id="main-content">
+            <img src="reddit-img/community-Icon.png" class="community-img" />
+            <div>r/place</div>
+            <img src="reddit-img/star-icon.png" class="star-icon" />
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="summary">
+            <div>RESOURCES</div>
+            <img src="reddit-img/arrow-up-icon.png" />
+          </div>
+
+          <div class="content2">
+            <img src="reddit-img/reddit-small-white-icon.png" />
+            <p>About Reddit</p>
+          </div>
+
+          <div class="content2">
+            <img src="reddit-img/advertise-icon.png" />
+            <p>Advertise</p>
+          </div>
+
+          <div class="content2">
+            <img src="reddit-img/help-icon.png" />
+            <p>Help</p>
+          </div>
+
+          <div class="content2">
+            <img src="reddit-img/book-icon.png" />
+            <p>Blog</p>
+          </div>
+
+          <div class="content2">
+            <img src="reddit-img/fix-icon.png" />
+            <p>Careers</p>
+          </div>
+
+          <div class="content2">
+            <img src="reddit-img/microphone-icon.png" />
+            <p>Press</p>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="content2">
+            <button class="r-btn">
+              <img src="reddit-img/r-lowercase-icon.png" />
+            </button>
+            <p>communities</p>
+          </div>
+
+          <div class="content2">
+            <img src="reddit-img/time-deadline-icon.png" />
+            <p>Best od Reddit</p>
+          </div>
+
+          <div class="content2">
+            <img src="reddit-img/topic-property-icon.png" />
+            <p>communities</p>
+          </div>
+        </div>
+
+        <div class="margin">
+          <div class="items">
+            <div class="content2">
+              <img src="reddit-img/content-icon.png" />
+              <p>Content policy</p>
+            </div>
+
+            <div class="content2">
+              <img src="reddit-img/privacy-icon.png" />
+              <p>Privacy Policy</p>
+            </div>
+
+            <div class="content2">
+              <img
+                src="reddit-img/agreement-icon.png"
+                style="margin-bottom: 5px"
+              />
+              <p>User Agreement</p>
+            </div>
+
+            <p class="reddit-rights">Reddit, inc.2024.All rights reserved.</p>
+          </div>
+        </div>
+      </aside>
+
+      <main id="main">
+        <div id="homePage">
+          <div class="main-header">
+            <div class="header-content">
+              <p>Best</p>
+              <img
+                src="reddit-img/arrow-down-icon.png"
+                class="arrow-down-icon"
+              />
+              <div class="tooltip">Open sort options</div>
+            </div>
+
+            <div class="header-content">
+              <img src="reddit-img/post-list-icon.png" class="post-list-icon" />
+              <img
+                src="reddit-img/arrow-down-icon.png"
+                class="arrow-down-icon"
+              />
+              <div class="tooltip">Change post view</div>
+            </div>
+          </div>
+
+          <div class="post-content" id="post" style="padding-bottom: 50px">
+            <!-- <div class="post-header">
+            <div class="left-section-post">
+              <img src="reddit-img/avatar_default_0.png" />
+              <p class="poster-name">
+                r/nigerianfood<span class="time-of-post">
+                  &#8226; 8 hr.ago &#8226; Popular in your country</span
+                >
+              </p>
+            </div>
+
+            <div class="right-section-post">
+              <button class="join-post">Join</button>
+              <img src="reddit-img/menu-dot-dot-dot-icon.png" />
+            </div>
+          </div>
+
+          <div class="post">
+            <p class="post-dis">INDOMIE SUPREMACY &#129299;</p>
+
+            <div class="post-img-container">
+              <img src="reddit-img/indomie.jpg" class="post-img" />
+            </div>
+
+            <div class="bottom-post">
+              <div class="like-dislike">
+                <button>
+                  <img src="reddit-img/arrow-up-likes-icon.png" />
+                </button>
+                <p>47</p>
+                <button><img src="reddit-img/arrow-down-dislike.png" /></button>
+              </div>
+
+              <div class="m-btn-bottom">
+                <img src="reddit-img/square -message-icon.png" />
+                <p>11</p>
+              </div>
+
+              <div class="m-btn-bottom">
+                <img src="reddit-img/award-icon.png" />
+              </div>
+
+              <div class="m-btn-bottom">
+                <img src="reddit-img/share-icon.png" />
+                <p>Share</p>
+              </div>
+            </div>
+          </div> -->
+          </div>
+        </div>
+      </main>
+
+      <section
+        class="right-side-bar"
+        style="display: flex; align-items: center"
+      >
+        <div style="color: white; font-size: 20px">
+          Too lazy to complete this side of the bar
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="side-bar.js"></script>
+  <script src="main.js"></script>
+</html>
